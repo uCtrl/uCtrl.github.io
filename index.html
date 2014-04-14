@@ -127,11 +127,12 @@
 
 <div class="highlight highlight-json"><pre><span class="p">{</span>
    <span class="nt">"messageType"</span><span class="p">:</span> <span class="err">X</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="err">Y</span><span class="p">,</span>
    <span class="nt">"YYY"</span><span class="p">:</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 
-<p>where X is the enum of the request (number) and YYY is the additional information required.</p>
+<p>where X is the enum of the request (number), Y is the size of the array and YYY is the additional information required.</p>
 
 <h4>
 <a name="get" class="anchor" href="#get"><span class="octicon octicon-link"></span></a>Get</h4>
@@ -205,6 +206,7 @@
 
 <div class="highlight highlight-json"><pre><span class="p">{</span>
    <span class="nt">"messageType"</span><span class="p">:</span><span class="mi">11</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
    <span class="nt">"platform"</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
       <span class="nt">"enabled"</span><span class="p">:</span><span class="s2">"ON"</span><span class="p">,</span>
@@ -221,6 +223,7 @@
 
 <div class="highlight highlight-json"><pre><span class="p">{</span>
    <span class="nt">"messageType"</span><span class="p">:</span><span class="mi">13</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"devices"</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
@@ -247,6 +250,7 @@
 <div class="highlight highlight-json"><pre><span class="p">{</span>
    <span class="nt">"messageType"</span><span class="p">:</span><span class="mi">15</span><span class="p">,</span>
    <span class="nt">"deviceId"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"scenarios"</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">"id"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
@@ -267,6 +271,7 @@
 <div class="highlight highlight-json"><pre><span class="p">{</span>
    <span class="nt">"messageType"</span><span class="p">:</span><span class="mi">17</span><span class="p">,</span>
    <span class="nt">"scenarioId"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"tasks"</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">"id"</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
@@ -287,6 +292,7 @@
 <div class="highlight highlight-json"><pre><span class="p">{</span>
    <span class="nt">"messageType"</span><span class="p">:</span><span class="mi">19</span><span class="p">,</span>
    <span class="nt">"taskId"</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"conditions"</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">"id"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
@@ -313,11 +319,12 @@
    <span class="nt">"messageType"</span><span class="p">:</span> <span class="err">X</span><span class="p">,</span>
    <span class="nt">"status"</span><span class="p">:</span> <span class="err">OK</span> <span class="err">(</span><span class="kc">true</span><span class="err">)</span> <span class="err">|</span> <span class="err">ERROR</span> <span class="err">(</span><span class="kc">false</span><span class="err">)</span><span class="p">,</span>
    <span class="nt">"error"</span> <span class="p">:</span> <span class="err">NULL</span> <span class="err">|</span> <span class="s2">"Error string"</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="err">Y</span><span class="p">,</span>
    <span class="nt">"YYY"</span><span class="p">:</span> <span class="p">{</span><span class="err">...</span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 
-<p>where X is the enum of the response (number) and YYY is the additional information required.</p>
+<p>where X is the enum of the response (number), Y is the size of the array and YYY is the additional information required.</p>
 
 <h4>
 <a name="getplatform-2" class="anchor" href="#getplatform-2"><span class="octicon octicon-link"></span></a>GetPlatform (2)</h4>
@@ -328,6 +335,7 @@
    <span class="nt">"messageType"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"status"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
    <span class="nt">"error"</span> <span class="p">:</span> <span class="err">NULL</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
    <span class="nt">"platform"</span><span class="p">:</span> <span class="p">{</span>
       <span class="nt">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
       <span class="nt">"enabled"</span><span class="p">:</span><span class="s2">"ON"</span><span class="p">,</span>
@@ -346,6 +354,7 @@
    <span class="nt">"messageType"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
    <span class="nt">"status"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
    <span class="nt">"error"</span> <span class="p">:</span> <span class="err">NULL</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"devices"</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
@@ -374,6 +383,7 @@
    <span class="nt">"status"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
    <span class="nt">"error"</span> <span class="p">:</span> <span class="err">NULL</span><span class="p">,</span>
    <span class="nt">"deviceId"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"scenarios"</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">"id"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
@@ -396,6 +406,7 @@
    <span class="nt">"status"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
    <span class="nt">"error"</span> <span class="p">:</span> <span class="err">NULL</span><span class="p">,</span>
    <span class="nt">"scenarioId"</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"tasks"</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">"id"</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
@@ -417,7 +428,8 @@
    <span class="nt">"messageType"</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
    <span class="nt">"status"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
    <span class="nt">"error"</span> <span class="p">:</span> <span class="err">NULL</span><span class="p">,</span>
-   <span class="nt">"taskId"</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span>
+   <span class="nt">"taskId"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+   <span class="nt">"size"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
    <span class="nt">"conditions"</span><span class="p">:</span> <span class="p">[</span>
       <span class="p">{</span>
          <span class="nt">"id"</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span>
