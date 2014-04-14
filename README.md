@@ -92,10 +92,11 @@ The shell for requests is:
 ```json
 {
    "messageType": X,
+   "size": Y,
    "YYY": {...}
 }
 ```
-where X is the enum of the request (number) and YYY is the additional information required.
+where X is the enum of the request (number), Y is the size of the array and YYY is the additional information required.
 
 #### Get
 
@@ -147,6 +148,7 @@ This request will send basic informations on the platform.
 ```json
 {
    "messageType":11,
+   "size": 1,
    "platform": {
       "id":1,
       "enabled":"ON",
@@ -160,6 +162,7 @@ This request will send an array of devices.
 ```json
 {
    "messageType":13,
+   "size": 2,
    "devices": [
       {
          "id":2,
@@ -183,6 +186,7 @@ This request will send an array of scenarios for the device (deviceId).
 {
    "messageType":15,
    "deviceId":2,
+   "size": 2,
    "scenarios": [
       {
          "id":3,
@@ -200,6 +204,7 @@ This request will send an array of tasks for the scenario (scenarioId).
 {
    "messageType":17,
    "scenarioId":3,
+   "size": 2,
    "tasks": [
       {
          "id":4,
@@ -217,6 +222,7 @@ This request will send an array of tasks for the task (taskId).
 {
    "messageType":19,
    "taskId":4,
+   "size": 2,
    "conditions": [
       {
          "id":5,
@@ -240,10 +246,11 @@ The shell for responses is:
    "messageType": X,
    "status": OK (true) | ERROR (false),
    "error" : NULL | "Error string",
+   "size": Y,
    "YYY": {...}
 }
 ```
-where X is the enum of the response (number) and YYY is the additional information required.
+where X is the enum of the response (number), Y is the size of the array and YYY is the additional information required.
 
 #### GetPlatform (2)
 This is the response from GetPlatform Request (1)
@@ -252,6 +259,7 @@ This is the response from GetPlatform Request (1)
    "messageType": 2,
    "status": true,
    "error" : NULL,
+   "size": 1,
    "platform": {
       "id":1,
       "enabled":"ON",
@@ -267,6 +275,7 @@ This is the response from GetDevice Request (3)
    "messageType": 4,
    "status": true,
    "error" : NULL,
+   "size": 2,
    "devices": [
       {
          "id":2,
@@ -292,6 +301,7 @@ This is the response from GetScenarios Request (5)
    "status": true,
    "error" : NULL,
    "deviceId":2,
+   "size": 2,
    "scenarios": [
       {
          "id":3,
@@ -311,6 +321,7 @@ This is the response from GetTasks Request (7)
    "status": true,
    "error" : NULL,
    "scenarioId":3,
+   "size": 2,
    "tasks": [
       {
          "id":4,
@@ -329,7 +340,8 @@ This is the response from GetConditions Request (9)
    "messageType": 10,
    "status": true,
    "error" : NULL,
-   "taskId":4,
+   "taskId": 4,
+   "size": 2,
    "conditions": [
       {
          "id":5,
@@ -387,6 +399,4 @@ This is the response from SaveConditions Request (19)
    "status": true,
    "error" : NULL
 }
-```
-#### tEST
 ```
