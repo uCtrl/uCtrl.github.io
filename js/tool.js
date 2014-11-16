@@ -1,0 +1,2 @@
+/*! uCtrl-Website - v0.0.1 - 2014-11-16 */
+function arrayObjectIndexOf(a,b,c){for(var d=0,e=a.length;e>d;d++)if(a[d][c]===b)return d;return-1}var cookie={set:function(a,b,c){var d=new Date;d.setTime(d.getTime()+24*c*60*60*1e3);var e="expires="+d.toUTCString();document.cookie=a+"="+b+"; "+e},get:function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var d=b[c];" "==d.charAt(0);)d=d.substring(1);if(-1!=d.indexOf(a))return d.substring(a.length,d.length)}return""},test:function(a){var b=cookie.get(a);return""==b}},langSelect=$(".selectpicker");

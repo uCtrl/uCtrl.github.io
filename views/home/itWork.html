@@ -1,0 +1,12 @@
+<div class="itWork bg1" id="itWorkCarousel"><div class="container"><div class="row text"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itWorkTitle' | translate}}</h1><p>{{'itWorkTxt1' | translate}}.</p><p>{{'itWorkTxt2' | translate}}.</p><p>{{'itWorkTxt3' | translate}}.</p><p>{{'itWorkTxt4' | translate}}.</p></div></div><div class="row text" style="display: none"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itEchoTitle' | translate}}</h1><p>{{'itEchoTxt1' | translate}}.</p><p>{{'itEchoTxt2' | translate}}.</p><br><br><br></div></div><div class="row text" style="display: none"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itSecureTitle' | translate}}</h1><p>{{'itSecureTxt1' | translate}}.</p><p>{{'itSecureTxt2' | translate}}.</p><p>{{'itSecureTxt3' | translate}}.</p><br><br></div></div><div class="row"><div class="btn-slide"><div class="cell"><div class="btn active" title="{{'itWorkBt1' | translate}}"><i class="fa fa-fw fa-magic"></i></div><br>{{'itWorkBt1' | translate}}</div><div class="cell"><div class="btn" title="{{'itWorkBt2' | translate}}"><i class="fa fa-fw fa-leaf"></i></div><br>{{'itWorkBt2' | translate}}</div><div class="cell"><div class="btn" title="{{'itWorkBt3' | translate}}"><i class="fa fa-fw fa-lock"></i></div><br>{{'itWorkBt3' | translate}}</div></div></div></div></div><script>var carousel = {};
+	carousel.element = $('.itWork');
+	carousel.btn = carousel.element.find('.btn');
+
+	carousel.btn.on('click', function() {
+		var index = carousel.btn.index(this);
+
+		carousel.btn.removeClass('active').eq(index).addClass('active');
+		carousel.element.find('.row.text').hide().eq(index).show();
+
+		carousel.element.attr('class', 'itWork bg' + (index + 1));
+	});</script>

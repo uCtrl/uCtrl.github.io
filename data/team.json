@@ -1,0 +1,272 @@
+{
+	"software": [
+		{
+			"firstName": "Alexandre",
+			"lastName": "Beaudoin",
+			"email": "",
+			"picture": "",
+			"en": {
+				"post": "Web master",
+				"text": ""
+			},
+			"fr": {
+				"post": "Web master",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Bobby",
+			"lastName": "Lavoie",
+			"email": "bobby.lavoie@usherbrooke.ca",
+			"picture": "img/teamPictures/bobby.jpg",
+			"en": {
+				"post": "Analyst programmer",
+				"text": ""
+			},
+			"fr": {
+				"post": "Analyste programmeur",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Jean-Philippe",
+			"lastName": "Gauthier",
+			"email": "",
+			"picture": "img/teamPictures/jpgauthier.jpg",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Laurens",
+			"lastName": "Coderre",
+			"email": "",
+			"picture": "img/teamPictures/laurens.jpg",
+			"en": {
+				"post": "Team leader",
+				"text": ""
+			},
+			"fr": {
+				"post": "Chef d'équipe",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Simon",
+			"lastName": "Benoit",
+			"email": "",
+			"picture": "img/teamPictures/simBen.jpg",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Émile",
+			"lastName": "Bélair",
+			"email": "",
+			"picture": "",
+			"en": {
+				"post": "Designer",
+				"text": ""
+			},
+			"fr": {
+				"post": "Graphiste",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Alexis",
+			"lastName": "Huard",
+			"email": "",
+			"picture": "img/teamPictures/alexis.jpg",
+			"en": {
+				"post": "Scrum master",
+				"text": ""
+			},
+			"fr": {
+				"post": "Scrum master",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Alexandre",
+			"lastName": "Martel",
+			"email": "",
+			"picture": "",
+			"en": {
+				"post": "Wrecker",
+				"text": ""
+			},
+			"fr": {
+				"post": "Dépaneuse",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Francis",
+			"lastName": "Beauchemin",
+			"email": "",
+			"picture": "",
+			"en": {
+				"post": "Software architect",
+				"text": ""
+			},
+			"fr": {
+				"post": "Architechte logiciel",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Thomas",
+			"lastName": "Duhautois",
+			"email": "",
+			"picture": "",
+			"en": {
+				"post": "Backend programmer",
+				"text": ""
+			},
+			"fr": {
+				"post": "Programmeur serveur",
+				"text": ""
+			}
+		}
+	],
+	"hardware": [
+		{
+			"firstName": "Cameron",
+			"lastName": "Brouillette",
+			"email": "cameron.brouillette@gmail.com",
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Jonathan",
+			"lastName": "D’Amours,",
+			"email": "damours.jonathan@gmail.com",
+			"picture": "img/teamPictures/JDAmour.jpg",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Mathieu",
+			"lastName": "Gagnon",
+			"email": "gmatiosse1@gmail.com",
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Vincent",
+			"lastName": "Guillemette",
+			"email": "vincent.guillemette1@gmail.com",
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Alexandre",
+			"lastName": "Proulx",
+			"email": "alexandre.proulx3@gmail.com",
+			"picture": "img/teamPictures/aProulx.jpg",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Jean-Philippe",
+			"lastName": "Raymond",
+			"email": "jp.raymond13@gmail.com",
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Jonatan",
+			"lastName": "Rivest",
+			"email": "jo_arcange@hotmail.com",
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Jean-François",
+			"lastName": "Therriault",
+			"email": "jeanfrancois.therriault@usherbrooke.ca",
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		},
+		{
+			"firstName": "Vincent",
+			"lastName": "Le Cunff",
+			"email": "",
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
+		}
+	]
+}
