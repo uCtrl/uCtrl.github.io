@@ -1,12 +1,87 @@
-<div class="itWork bg1" id="itWorkCarousel"><div class="container"><div class="row text"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itWorkTitle' | translate}}</h1><p>{{'itWorkTxt1' | translate}}.</p><p>{{'itWorkTxt2' | translate}}.</p><p>{{'itWorkTxt3' | translate}}.</p><p>{{'itWorkTxt4' | translate}}.</p></div></div><div class="row text" style="display: none"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itEchoTitle' | translate}}</h1><p>{{'itEchoTxt1' | translate}}.</p><p>{{'itEchoTxt2' | translate}}.</p><br><br><br></div></div><div class="row text" style="display: none"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itSecureTitle' | translate}}</h1><p>{{'itSecureTxt1' | translate}}.</p><p>{{'itSecureTxt2' | translate}}.</p><p>{{'itSecureTxt3' | translate}}.</p><br><br></div></div><div class="row"><div class="btn-slide"><div class="cell"><div class="btn active" title="{{'itWorkBt1' | translate}}"><i class="fa fa-fw fa-magic"></i></div><br>{{'itWorkBt1' | translate}}</div><div class="cell"><div class="btn" title="{{'itWorkBt2' | translate}}"><i class="fa fa-fw fa-leaf"></i></div><br>{{'itWorkBt2' | translate}}</div><div class="cell"><div class="btn" title="{{'itWorkBt3' | translate}}"><i class="fa fa-fw fa-lock"></i></div><br>{{'itWorkBt3' | translate}}</div></div></div></div></div><script>var carousel = {};
-	carousel.element = $('.itWork');
-	carousel.btn = carousel.element.find('.btn');
+<div class="itWork" id="itWorkCarousel"><div class="bg1 slideShowed"><div class="container"><div class="row text"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itWorkTitle' | translate}}</h1><p>{{'itWorkTxt1' | translate}}.</p><p ng-bind-html="'itWorkTxt2' | translate"></p><p ng-bind-html="'itWorkTxt3' | translate"></p><p>{{'itWorkTxt4' | translate}}.</p></div></div></div></div><div class="bg2 slideHidden"><div class="container"><div class="row text"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itEchoTitle' | translate}}</h1><p>{{'itEchoTxt1' | translate}}.</p><p>{{'itEchoTxt2' | translate}}.</p><br><br><br></div></div></div></div><div class="bg3 slideHidden"><div class="container"><div class="row text"><div class="col-md-6 col-sm-8 col-xs-8"><h1>{{'itSecureTitle' | translate}}</h1><p>{{'itSecureTxt1' | translate}}.</p><p>{{'itSecureTxt2' | translate}}.</p><p>{{'itSecureTxt3' | translate}}.</p><br><br></div></div></div></div><div class="btnZone"><div class="btn-slide"><div class="cell"><div class="btn active" title="{{'itWorkBt1' | translate}}"><i class="fa fa-fw fa-magic"></i></div><br>{{'itWorkBt1' | translate}}</div><div class="cell"><div class="btn" title="{{'itWorkBt2' | translate}}"><i class="fa fa-fw fa-leaf"></i></div><br>{{'itWorkBt2' | translate}}</div><div class="cell"><div class="btn" title="{{'itWorkBt3' | translate}}"><i class="fa fa-fw fa-lock"></i></div><br>{{'itWorkBt3' | translate}}</div></div></div></div><script>// Carousel gestion
+	window.onresize = resizeCarousel;
 
-	carousel.btn.on('click', function() {
-		var index = carousel.btn.index(this);
+	var resizeRebound = true,
+		resizeWaiting = false,
+		resizeInterval,
+		itWorkCarousel = document.getElementById('itWorkCarousel'),
+		itWorkContainer = document.getElementById('itWorkContainer'),
+		slides = [
+			itWorkCarousel.getElementsByClassName('bg1')[0],
+			itWorkCarousel.getElementsByClassName('bg2')[0],
+			itWorkCarousel.getElementsByClassName('bg3')[0]
+		],
+		btnZoneC = itWorkCarousel.getElementsByClassName('btnZone')[0].getElementsByClassName('btn'),
+		slideNumber = 1;
 
-		carousel.btn.removeClass('active').eq(index).addClass('active');
-		carousel.element.find('.row.text').hide().eq(index).show();
+	btnZoneC[0].addEventListener('click', function() {
+		changeSlide(1);
+	});
+	btnZoneC[1].addEventListener('click', function() {
+		changeSlide(2);
+	});
+	btnZoneC[2].addEventListener('click', function() {
+		changeSlide(3);
+	});
 
-		carousel.element.attr('class', 'itWork bg' + (index + 1));
-	});</script>
+	function resizeCarousel() {
+		if (resizeRebound) {
+			resizeRebound = false;
+
+			//Get biggest height
+			var bigger = 0;
+			var current;
+			var i;
+			for (i = 0; i < slides.length; i++) {
+				current = slides[i].getElementsByClassName('container')[0].clientHeight;
+
+				if (current > bigger) {
+					bigger = current;
+				}
+			}
+
+			itWorkContainer.style.height = (bigger + 120) + 'px';
+
+			window.clearTimeout(resizeInterval);
+			resizeInterval = setTimeout(function() {
+				resizeRebound = true;
+				if (resizeWaiting) {
+					resizeWaiting = false;
+					resizeCarousel();
+				}
+			}, 500);
+		} else {
+			resizeWaiting = true;
+		}
+	}
+
+	resizeCarousel();
+	window.setTimeout(resizeCarousel(),500);
+
+	function changeSlide(number) {
+		if (number != slideNumber) {
+			for (var i = 0; i < btnZoneC.length; i++) {
+				// Change the btn color
+				if (i == (number - 1)) {
+					btnZoneC[i].className = 'btn active';
+				} else {
+					btnZoneC[i].className = 'btn';
+				}
+
+				// Change the background
+				if (i == (number - 1)) {
+					//Show
+					slides[i].className = 'bg' + (i + 1) + ' slideShow slideShowed';
+					slides[i].style.zIndex = 1000;
+				} else if (i == (slideNumber - 1)) {
+					//Hide
+					slides[i].className = 'bg' + (i + 1) + ' slideHidden';
+					slides[i].style.zIndex = 100;
+				} else {
+					slides[i].style.zIndex = 0;
+				}
+			}
+
+			slideNumber = number;
+		}
+	}</script>
