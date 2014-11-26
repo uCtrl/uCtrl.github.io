@@ -71,7 +71,7 @@
 				// Change the background
 				if (i == (number - 1)) {
 					//Show
-					slides[i].className = 'bg' + (i + 1) + ' slideShow slideShowed';
+					slides[i].className = 'bg' + (i + 1) + (number>slideNumber?' slideShowLeft':' slideShowRight') + ' slideShowed';
 					slides[i].style.zIndex = 1000;
 				} else if (i == (slideNumber - 1)) {
 					//Hide
