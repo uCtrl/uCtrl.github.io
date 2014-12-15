@@ -3,141 +3,141 @@
 		{
 			"firstName": "Alexandre",
 			"lastName": "Beaudoin",
-			"email": "",
-			"picture": "",
+			"email": "ofrogon@gmail.com",
+			"linkedIn": "http://ca.linkedin.com/pub/alexandre-beaudoin/63/867/594",
+			"facebook": "",
+			"picture": "team-beaudoin.png",
 			"en": {
-				"post": "Web master",
-				"text": ""
+				"post": "Web Developer"
 			},
 			"fr": {
-				"post": "Web master",
-				"text": ""
+				"post": "Développeur Web"
 			}
 		},
 		{
 			"firstName": "Bobby",
 			"lastName": "Lavoie",
-			"email": "bobby.lavoie@usherbrooke.ca",
-			"picture": "img/teamPictures/bobby.jpg",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-lavoie.png",
 			"en": {
-				"post": "Analyst programmer",
-				"text": ""
+				"post": "Ninja Boy"
 			},
 			"fr": {
-				"post": "Analyste programmeur",
-				"text": ""
+				"post": "Spécialiste Ninja Block"
 			}
 		},
 		{
 			"firstName": "Jean-Philippe",
 			"lastName": "Gauthier",
 			"email": "",
-			"picture": "img/teamPictures/jpgauthier.jpg",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-gauthier.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "Technology Expert"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "Expert Techno."
 			}
 		},
 		{
 			"firstName": "Laurens",
 			"lastName": "Coderre",
 			"email": "",
-			"picture": "img/teamPictures/laurens.jpg",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-coderre.png",
 			"en": {
-				"post": "Team leader",
-				"text": ""
+				"post": "Server Expert"
 			},
 			"fr": {
-				"post": "Chef d'équipe",
-				"text": ""
+				"post": "Expert Serveur"
 			}
 		},
 		{
 			"firstName": "Simon",
 			"lastName": "Benoit",
 			"email": "",
-			"picture": "img/teamPictures/simBen.jpg",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-benoit.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "Technical Writer"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "Écrivain de Rapport"
 			}
 		},
 		{
 			"firstName": "Émile",
 			"lastName": "Bélair",
 			"email": "",
-			"picture": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-belair.png",
 			"en": {
-				"post": "Designer",
-				"text": ""
+				"post": "Designer"
 			},
 			"fr": {
-				"post": "Graphiste",
-				"text": ""
+				"post": "Graphiste"
 			}
 		},
 		{
 			"firstName": "Alexis",
 			"lastName": "Huard",
 			"email": "",
-			"picture": "img/teamPictures/alexis.jpg",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-huard.png",
 			"en": {
-				"post": "Scrum master",
-				"text": ""
+				"post": "QML Adept"
 			},
 			"fr": {
-				"post": "Scrum master",
-				"text": ""
+				"post": "Spécialiste QML"
 			}
 		},
 		{
 			"firstName": "Alexandre",
 			"lastName": "Martel",
 			"email": "",
-			"picture": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-martel.png",
 			"en": {
-				"post": "Wrecker",
-				"text": ""
+				"post": "QML Lord"
 			},
 			"fr": {
-				"post": "Dépaneuse",
-				"text": ""
+				"post": "Maitre QML"
 			}
 		},
 		{
 			"firstName": "Francis",
 			"lastName": "Beauchemin",
 			"email": "",
-			"picture": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-beauchemin.png",
 			"en": {
-				"post": "Software architect",
-				"text": ""
+				"post": "Voice Specialist"
 			},
 			"fr": {
-				"post": "Architechte logiciel",
-				"text": ""
+				"post": "Spécialiste Com. Vocale"
 			}
 		},
 		{
 			"firstName": "Thomas",
 			"lastName": "Duhautois",
 			"email": "",
-			"picture": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-duhautois.png",
 			"en": {
-				"post": "Backend programmer",
-				"text": ""
+				"post": "Mobile Intern"
 			},
 			"fr": {
-				"post": "Programmeur serveur",
-				"text": ""
+				"post": "Stagiaire Mobile"
 			}
 		}
 	],
@@ -145,127 +145,127 @@
 		{
 			"firstName": "Cameron",
 			"lastName": "Brouillette",
-			"email": "cameron.brouillette@gmail.com",
-			"picture": "",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-brouillette.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "Hardware Designer"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "Concepteur Matériel"
 			}
 		},
 		{
 			"firstName": "Jonathan",
 			"lastName": "D’Amours,",
-			"email": "damours.jonathan@gmail.com",
-			"picture": "img/teamPictures/JDAmour.jpg",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-amour.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "Kiosk Builder"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "Monteur de Kiosque"
 			}
 		},
 		{
 			"firstName": "Mathieu",
 			"lastName": "Gagnon",
-			"email": "gmatiosse1@gmail.com",
-			"picture": "",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-gagnon.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "Pokemon Master"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "Maître Pokémon"
 			}
 		},
 		{
 			"firstName": "Vincent",
 			"lastName": "Guillemette",
-			"email": "vincent.guillemette1@gmail.com",
-			"picture": "",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-guillemette.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "EMBED Specialist"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "Spécialiste EMBED"
 			}
 		},
 		{
 			"firstName": "Alexandre",
 			"lastName": "Proulx",
-			"email": "alexandre.proulx3@gmail.com",
-			"picture": "img/teamPictures/aProulx.jpg",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-proulx.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "One Man Army"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "One Man Army"
 			}
 		},
 		{
 			"firstName": "Jean-Philippe",
 			"lastName": "Raymond",
-			"email": "jp.raymond13@gmail.com",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
 			"picture": "",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": ""
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": ""
 			}
 		},
 		{
 			"firstName": "Jonatan",
 			"lastName": "Rivest",
-			"email": "jo_arcange@hotmail.com",
-			"picture": "",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-rivest.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": ""
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": ""
 			}
 		},
 		{
 			"firstName": "Jean-François",
 			"lastName": "Therriault",
-			"email": "jeanfrancois.therriault@usherbrooke.ca",
-			"picture": "",
+			"email": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-therriault.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "PLC Specialist"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "Spécialiste PLC"
 			}
 		},
 		{
 			"firstName": "Vincent",
 			"lastName": "Le Cunff",
 			"email": "",
-			"picture": "",
+			"linkedIn": "",
+			"facebook": "",
+			"picture": "team-cunff.png",
 			"en": {
-				"post": "",
-				"text": ""
+				"post": "Intern"
 			},
 			"fr": {
-				"post": "",
-				"text": ""
+				"post": "Stagiaire"
 			}
 		}
 	]
